@@ -1,0 +1,11 @@
+{
+  "buildCommand": "cd frontend && npm install && npm build",
+  "outputDirectory": "client/dist",
+  "framework": "vite",
+  "rewrites": [
+    {
+      "source": "/backend/(.*)",
+      "destination": "/backend/wsgi.py"
+    }
+  ]
+}
